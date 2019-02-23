@@ -14,7 +14,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    appwrapper.cpp
+    errorlevel.cpp
 
 RESOURCES += qml.qrc
 
@@ -30,4 +30,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    appwrapper.h
+    errorlevel.h
